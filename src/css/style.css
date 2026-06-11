@@ -1,0 +1,233 @@
+/* ✅ Apply font everywhere */
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Theme colors */
+.primary-bg {
+  background-color: #ff5722;
+}
+
+.primary-text {
+  color: #4c4b4b;
+}
+
+.primary-text-light {
+  color: #6b7280;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 400;
+}
+
+button {
+  font-weight: 500;
+}
+
+/* Smooth feel */
+body {
+  letter-spacing: 0.3px;
+}
+.slider-section {
+  padding: 6px 0;
+  background: #f9852b;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TEXT AREA */
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  
+}
+
+.slider-text {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-text span {
+  min-width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* ARROWS */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #d04e25;
+  font-size: 13px;
+  padding: 4px 11px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  color: #ffffff;
+}
+
+.arrow:hover {
+  background: #d04e25;
+}
+
+.arrow.left {
+  left: -45px;
+}
+
+.arrow.right {
+  right: -45px;
+}
+
+
+.mango-info {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* FEATURES */
+.mango-features {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mango-pill {
+  flex: 1;
+  min-width: 220px;
+  background: #f7f7f7;
+  border-radius: 50px;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.mango-pill:hover {
+  transform: translateY(-2px);
+}
+
+/* ICON COLORS */
+.icon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.green { background: #e8f7ee; color: #2e7d32; }
+.blue { background: #e3f2fd; color: #1565c0; }
+.orange { background: #fff3e0; color: #ef6c00; }
+.gray { background: #f1f1f1; color: #555; }
+
+/* ALERT BOX */
+.mango-alert {
+  margin-top: 20px;
+  background: #fff6f2;
+  border: 1px solid #f5c6b8;
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.alert-icon {
+  background: #ffe0cc;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.mango-alert h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.mango-alert p {
+  margin: 4px 0 0;
+  font-size: 14px;
+}
+
+.mango-alert span {
+  color: #e65100;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ACCORDION */
+.mango-accordion {
+  margin-top: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.acc-header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  background: #fafafa;
+}
+
+.acc-header h4 {
+  margin: 0;
+}
+
+.acc-body {
+  display: none;
+  padding: 16px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #555;
+}
+
+.step { flex:1; text-align:center; color:#aaa; }
+.step.active { color:black; font-weight:600; }
+
+.input {
+  width:100%; padding:12px; margin-bottom:12px;
+  border:1px solid #ddd; border-radius:8px;
+}
+
+.btn {
+  background:#f9c349; padding:12px;
+  width:100%; border-radius:8px;
+  font-weight:600;
+}
+
+.btn-outline {
+  border:1px solid #ccc;
+  padding:12px; width:100%;
+  border-radius:8px;
+}
+
+.radio {
+  display:block;
+  border:1px solid #ddd;
+  padding:12px;
+  border-radius:8px;
+  margin-bottom:10px;
+}

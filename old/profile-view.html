@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Theme Color -->
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "rgb(159 5 5 / 92%)"
+      }
+    }
+  }
+}
+</script>
+
+</head>
+
+<body class="bg-gray-100">
+<div class="sticky top-0  w-full bg-[#781124] text-white flex justify-between items-center px-6 py-3 z-50 shadow">
+  <img src="image/logo.png" class="h-12 w-10%">
+
+  <div id="menu" class="hidden md:flex gap-16">
+    <a href="#" class="hover:text-pink-300 font-bold">Home</a>
+    <a href="#about" class="hover:text-pink-300 font-bold">About</a>
+	<a href="#about" class="hover:text-pink-300 font-bold">Contact Us</a>
+    <a href="#gallery" class="hover:text-pink-300 font-bold">Gallery</a>
+    <a href="#registration" class="hover:text-pink-300 font-bold">Register</a>
+	 <a href="login.html" class="hover:text-pink-300 font-bold">Login</a>
+  </div>
+
+  <button class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
+</div>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden fixed top-16 right-0 bg-white w-52 p-5 shadow-md flex flex-col gap-4 md:hidden">
+  <a href="#">Home</a>
+  <a href="#about">About</a>
+   <a href="#about">Contact Us</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#registration">Register</a>
+  <a href="login.html">login</a>
+</div>
+
+
+
+<body class="bg-gray-100">
+
+<!-- Header -->
+<div class="bg-pink-100 text-primary text-center py-6 shadow">
+  <h1 class="text-3xl font-bold">Profile Details 💕</h1>
+</div>
+
+<!-- Profile Card -->
+<div class="max-w-5xl mx-auto mt-10 bg-white rounded-2xl shadow-lg p-6">
+
+  <!-- Top Section -->
+  <div class="flex flex-col md:flex-row gap-6 items-center">
+
+    <!-- Photo -->
+    <img src="image/logo.png"
+         class="w-40 h-40 rounded-full object-cover border-4 border-primary">
+
+    <!-- Basic Info -->
+    <div class="text-center md:text-left">
+      <h2 class="text-2xl font-bold text-primary">Ravi Kumar</h2>
+      <p class="text-gray-600">Software Engineer</p>
+      <p class="text-gray-600">Age: 28</p>
+      <p class="text-gray-600">📍 Visakhapatnam</p>
+    </div>
+
+  </div>
+
+  <!-- Divider -->
+  <hr class="my-6">
+
+  <!-- Details Grid -->
+  <div class="grid md:grid-cols-2 gap-6 text-gray-700">
+
+    <div>
+      <p><span class="font-semibold text-primary">Father Name:</span> Ramesh Kumar</p>
+      <p><span class="font-semibold text-primary">Mother Name:</span> Lakshmi</p>
+      <p><span class="font-semibold text-primary">Education:</span> B.Tech</p>
+      <p><span class="font-semibold text-primary">Occupation:</span> Software Engineer</p>
+      <p><span class="font-semibold text-primary">Income:</span> ₹8 LPA</p>
+    </div>
+
+    <div>
+      <p><span class="font-semibold text-primary">Gender:</span> Male</p>
+      <p><span class="font-semibold text-primary">Contact:</span> +91 9876543210</p>
+      <p><span class="font-semibold text-primary">District:</span> Visakhapatnam</p>
+      <p><span class="font-semibold text-primary">Address:</span> Andhra Pradesh</p>
+    </div>
+
+  </div>
+
+  <!-- Partner Requirements -->
+  <div class="mt-6">
+    <h3 class="text-xl font-bold text-primary mb-2">💍 Partner Requirements</h3>
+    <p class="text-gray-600">
+      Looking for a kind-hearted and understanding partner with good family values.
+    </p>
+  </div>
+
+  <!-- Buttons -->
+  <div class="mt-6 flex gap-4 justify-center">
+
+    <button class="bg-primary text-white px-6 py-2 rounded hover:bg-primary/90">
+      Contact
+    </button>
+
+    <button class="border border-primary text-primary px-6 py-2 rounded hover:bg-primary/10">
+      Shortlist ❤️
+    </button>
+
+  </div>
+
+</div><br>
+
+</body>
+</html>
+
+<footer class="bg-black text-white py-10">
+
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 text-center md:text-left">
+
+    <!-- Block 1 -->
+    <div>
+      <h2 class="text-[rgb(159_5_5_/92%)] text-2xl font-bold mb-3">
+        Matrimonial 💕
+      </h2>
+      <p class="text-gray-400">
+        Thank you for your blessings and being part of our journey.
+      </p>
+    </div>
+
+    <!-- Block 2 -->
+    <div>
+      <h3 class="text-[rgb(159_5_5_/92%)] text-xl font-semibold mb-3">
+        Quick Links
+      </h3>
+      <ul class="space-y-2 text-gray-300">
+        <li><a href="#" class="hover:text-[rgb(159_5_5_/92%)]">Home</a></li>
+        <li><a href="#about" class="hover:text-[rgb(159_5_5_/92%)]">About</a></li>
+        <li><a href="#gallery" class="hover:text-[rgb(159_5_5_/92%)]">Gallery</a></li>
+        <li><a href="#registration" class="hover:text-[rgb(159_5_5_/92%)]">Register</a></li>
+      </ul>
+    </div>
+
+    <!-- Block 3 -->
+    <div>
+      <h3 class="text-[rgb(159_5_5_/92%)] text-xl font-semibold mb-3">
+        Contact Us
+      </h3>
+      <p class="text-gray-300">📞 +91 9876543210</p>
+      <p class="text-gray-300">📧 info@matrimonial.com</p>
+      <p class="text-gray-300">📍 India</p>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="text-center text-gray-500 text-sm mt-8 border-t border-gray-700 pt-4">
+    © 2026 All Rights Reserved
+  </div>
+
+</footer>
+</body>
+</html>

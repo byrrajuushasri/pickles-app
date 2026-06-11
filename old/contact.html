@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Theme Color -->
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "rgb(159 5 5 / 92%)"
+      }
+    }
+  }
+}
+</script>
+
+</head>
+
+<body class="bg-gray-100">
+<div class="sticky top-0  w-full bg-[#781124] text-white flex justify-between items-center px-6 py-3 z-50 shadow">
+  <img src="image/logo.png" class="h-12 w-10%">
+
+  <div id="menu" class="hidden md:flex gap-16">
+    <a href="#" class="hover:text-pink-300 font-bold">Home</a>
+    <a href="#about" class="hover:text-pink-300 font-bold">About</a>
+	<a href="#about" class="hover:text-pink-300 font-bold">Contact Us</a>
+    <a href="#gallery" class="hover:text-pink-300 font-bold">Gallery</a>
+    <a href="#registration" class="hover:text-pink-300 font-bold">Register</a>
+	 <a href="login.html" class="hover:text-pink-300 font-bold">Login</a>
+  </div>
+
+  <button class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
+</div>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden fixed top-16 right-0 bg-white w-52 p-5 shadow-md flex flex-col gap-4 md:hidden">
+  <a href="#">Home</a>
+  <a href="#about">About</a>
+   <a href="#about">Contact Us</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#registration">Register</a>
+  <a href="login.html">login</a>
+</div>
+
+<!-- Header -->
+<div class="bg-pink-100 text-primary text-center py-6 shadow">
+  <h1 class="text-3xl font-bold">Contact Us 💕</h1>
+  <p class="text-sm mt-1">We’d love to hear from you</p>
+</div>
+
+<!-- Contact Section -->
+<div class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-10">
+
+  <!-- Left Info -->
+  <div>
+    <h2 class="text-2xl font-bold text-primary mb-4">Get In Touch</h2>
+    <p class="text-gray-600 mb-6">
+      Feel free to contact us for any queries, suggestions, or support.Feel free to contact us for any queries, suggestions, or supportFeel free to contact us for any queries, suggestions, or support..
+    </p>
+
+    <div class="space-y-4 text-gray-700">
+      <p>📞 +91 9876543210</p>
+      <p>📧 info@matrimonial.com</p>
+      <p>📍 India</p>
+    </div>
+  </div>
+
+  <!-- Right Form -->
+  <form class="bg-white p-6 rounded-xl shadow space-y-4">
+
+    <input type="text" placeholder="Your Name"
+      class="w-full border border-primary/40 p-2 rounded text-primary
+      focus:outline-none focus:ring-2 focus:ring-primary">
+
+    <input type="email" placeholder="Your Email"
+      class="w-full border border-primary/40 p-2 rounded text-primary
+      focus:outline-none focus:ring-2 focus:ring-primary">
+
+    <input type="text" placeholder="Subject"
+      class="w-full border border-primary/40 p-2 rounded text-primary
+      focus:outline-none focus:ring-2 focus:ring-primary">
+
+    <textarea rows="4" placeholder="Your Message"
+      class="w-full border border-primary/40 p-2 rounded text-primary
+      focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+
+    <button
+      class="w-full bg-primary text-white py-2 rounded hover:bg-primary/90 transition">
+      Send Message
+    </button>
+
+  </form>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="bg-black text-white py-10">
+
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 text-center md:text-left">
+
+    <!-- Block 1 -->
+    <div>
+      <h2 class="text-[rgb(159_5_5_/92%)] text-2xl font-bold mb-3">
+        Matrimonial 💕
+      </h2>
+      <p class="text-gray-400">
+        Thank you for your blessings and being part of our journey.
+      </p>
+    </div>
+
+    <!-- Block 2 -->
+    <div>
+      <h3 class="text-[rgb(159_5_5_/92%)] text-xl font-semibold mb-3">
+        Quick Links
+      </h3>
+      <ul class="space-y-2 text-gray-300">
+        <li><a href="#" class="hover:text-[rgb(159_5_5_/92%)]">Home</a></li>
+        <li><a href="#about" class="hover:text-[rgb(159_5_5_/92%)]">About</a></li>
+        <li><a href="#gallery" class="hover:text-[rgb(159_5_5_/92%)]">Gallery</a></li>
+        <li><a href="#registration" class="hover:text-[rgb(159_5_5_/92%)]">Register</a></li>
+      </ul>
+    </div>
+
+    <!-- Block 3 -->
+    <div>
+      <h3 class="text-[rgb(159_5_5_/92%)] text-xl font-semibold mb-3">
+        Contact Us
+      </h3>
+      <p class="text-gray-300">📞 +91 9876543210</p>
+      <p class="text-gray-300">📧 info@matrimonial.com</p>
+      <p class="text-gray-300">📍 India</p>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="text-center text-gray-500 text-sm mt-8 border-t border-gray-700 pt-4">
+    © 2026 All Rights Reserved
+  </div>
+
+</footer>
+</body>
+</html>

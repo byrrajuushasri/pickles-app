@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Spicy Pickles</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="css/style.css">
+<!-- ✅ Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ 
+</head>
+
+<body>
+
+<div class="topbar">
+  <section class="slider-section">
+    <div class="slider-container">
+
+      <!-- LEFT ARROW -->
+      <button onclick="prevSlide()" class="arrow left">&#10094;</button>
+
+      <!-- SLIDER TEXT -->
+      <div class="slider-wrapper">
+        <div class="slider-text" id="topslider">
+          <span>✨ 10% OFF (up to ₹500) on Orders Above ₹3,999</span>
+          <span>🚚 Free Delivery Available</span>
+          <span>🔥 Fresh Homemade Pickles Available</span>
+        </div>
+      </div>
+
+      <!-- RIGHT ARROW -->
+      <button onclick="nextSlide()" class="arrow right">&#10095;</button>
+
+    </div>
+  </section>
+</div>
+<!-- 🧭 HEADER -->
+<header class="bg-white shadow px-6 py-4 flex justify-between items-center sticky top-0 z-50">
+
+  <h1 class="text-2xl primary-text font-bold"><a href="index-Pickle.html">SpicyPickles </a></h1>
+
+  <nav class="hidden md:flex space-x-8 primary-text font-medium">
+    <a href="mutton-pickle.html" class="hover:primary-text">Mutton Pickle</a>
+    <a href="chicken-pickle.html" class="hover:primary-text">Chicken Pickle</a>
+    <a href="chicken-pickle.html" class="hover:primary-text">Fish Pickle</a>
+    <a href="mutton-pickle.html" class="hover:primary-text">Mixture</a>
+  </nav>
+  <!-- Icons -->
+ <div class="flex items-center space-x-6 text-gray-700">
+
+  
+
+  <!-- 🛒 Cart -->
+  <button class="relative hover:text-black transition">
+
+    <!-- Cart Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" 
+         viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 7h13M7 13L5.4 5M16 16a2 2 0 11-4 0 2 2 0 014 0zM8 16a2 2 0 11-4 0 2 2 0 014 0z"/>
+    </svg>
+
+    <!-- Badge -->
+    <span class="absolute -top-2 -right-2 text-xs  primary-bg text-white px-1.5 rounded-full" >2 </span>
+
+  </button>
+
+</div>
+
+</header>
+
+<!-- 🛒 PRODUCT SECTION -->
+<section class="bg-[#fafafa] py-12 px-6">
+
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+
+<!-- IMAGE SLIDER -->
+<div>
+  <div class="border rounded-xl overflow-hidden relative">
+
+    <!-- IMAGE -->
+    <img id="mainImage" src="image/img2.jpg"
+      class="w-full h-[400px] object-cover transition duration-500">
+
+    <!-- LEFT -->
+    <button onclick="prevImage()" 
+      class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/70 px-3 py-1 rounded-full">
+      &#10094;
+    </button>
+
+    <!-- RIGHT -->
+    <button onclick="nextImage()" 
+      class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/70 px-3 py-1 rounded-full">
+      &#10095;
+    </button>
+
+  </div>
+</div>
+
+<!-- DETAILS -->
+<div>
+
+<h1 class="text-3xl primary-text">Spicy Chicken Pickle </h1>
+
+<p class="mt-4 primary-text-light">
+Traditional Andhra-style pickle with rich spices.
+</p>
+
+<div class="mt-4 text-yellow-400">
+★★★★★ <span class="text-gray-400">(120 reviews)</span>
+</div>
+
+<div class="mt-6">
+<span class="text-2xl font-bold">₹499</span>
+<span class="line-through text-gray-500 ml-2">₹699</span>
+</div>
+
+<!-- SELECT -->
+<div class="mt-6">
+<label class="block mb-2 font-semibold">Select Quantity:</label>
+
+<select class="bg-white border border-gray-300 px-4 py-2 rounded-lg w-full focus:ring-2 focus:ring-yellow-400">
+<option>250g</option>
+<option>500g</option>
+<option>1kg</option>
+</select>
+</div>
+
+<!-- BUTTON -->
+<button onclick="nextSlide()" class="mt-6 w-full py-3 rounded-lg primary-bg text-black hover:opacity-90">
+Add to Cart 🛒
+</button>
+
+</div>
+</div>
+
+</section>
+
+<section class="max-w-7xl mx-auto px-4 py-6 font-[Poppins]">
+
+  <!-- FEATURES -->
+  <div class="flex flex-wrap gap-4 justify-between">
+
+    <div class="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-full px-5 py-3 flex-1 min-w-[220px] hover:-translate-y-1 transition">
+      <div class="w-10 h-10 flex items-center justify-center rounded-full bg-green-100 text-green-700">
+        🌿
+      </div>
+      <span class="text-sm font-medium">Fresh From Farm</span>
+    </div>
+
+    <div class="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-full px-5 py-3 flex-1 min-w-[220px] hover:-translate-y-1 transition">
+      <div class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-100 text-blue-700">
+        🛡️
+      </div>
+      <span class="text-sm font-medium">No Chemicals</span>
+    </div>
+
+    <div class="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-full px-5 py-3 flex-1 min-w-[220px] hover:-translate-y-1 transition">
+      <div class="w-10 h-10 flex items-center justify-center rounded-full bg-orange-100 text-orange-600">
+        ☀️
+      </div>
+      <span class="text-sm font-medium">Natural Ripening</span>
+    </div>
+
+    <div class="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-full px-5 py-3 flex-1 min-w-[220px] hover:-translate-y-1 transition">
+      <div class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 text-gray-700">
+        🚚
+      </div>
+      <span class="text-sm font-medium">Fast Delivery</span>
+    </div>
+
+  </div>
+
+  <!-- ALERT BOX -->
+  <div class="mt-6 flex items-center gap-4 bg-orange-50 border border-orange-200 rounded-xl p-4">
+    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-orange-100 text-orange-600">
+      📦
+    </div>
+    <div>
+      <h4 class="text-sm font-semibold">Non-returnable item</h4>
+      <p class="text-sm text-gray-600">
+        Please refer to our 
+        <span class="text-orange-600 font-semibold cursor-pointer">Return Policy</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- ACCORDION -->
+  <div class="mt-6 border border-gray-200 rounded-xl overflow-hidden">
+    
+    <div onclick="toggleDesc()" class="flex justify-between items-center p-4 bg-gray-50 cursor-pointer">
+      <h4 class="font-semibold text-sm">Description</h4>
+      <svg id="icon" class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+</svg>
+    </div>
+
+    <div id="desc" class="hidden p-4 text-sm text-gray-600 border-t">
+      Premium mangoes directly from farms. Naturally ripened without chemicals.
+    </div>
+
+  </div>
+
+</section>
+
+
+<script src="js/script.js"></script>
+ <!-- 🔻 FOOTER -->
+<footer class="bg-black text-gray-300 py-12 mt-16">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+
+    <!-- Logo / About -->
+    <div>
+      <h2 class="text-xl font-bold text-white">Spicy Pickle </h2>
+      <p class="mt-3 text-sm text-gray-400">
+        Authentic homemade pickles delivered fresh to your doorstep.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-white font-semibold mb-4"> Our Pickle</h3>
+      <ul class="space-y-2 text-sm"> 
+        <li><a href="#" class="hover:text-yellow-400">Mutton</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Chicken</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Prawn</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Fish</a></li>
+      </ul>
+    </div>
+
+    <!-- Policies -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Policies</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-yellow-400">Shipping Policy</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Refund & Return Policy</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Terms & Conditions</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Contact</h3>
+      <p class="text-sm">📞 +91 9876543210</p>
+      <p class="text-sm mt-2">📧 support@mangome.in</p>
+
+      <!-- Social Icons -->
+      <div class="flex space-x-4 mt-4 text-lg">
+        <a href="#" class="hover:text-yellow-400">🌐</a>
+        <a href="#" class="hover:text-yellow-400">📘</a>
+        <a href="#" class="hover:text-yellow-400">📸</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="text-center text-gray-500 text-sm mt-10 border-t border-gray-800 pt-6">
+    © 2026 Pickles. All rights reserved.
+  </div>
+</footer>
+<!-- 🔁 SCRIPTS -->
+ 
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- ✅ Custom Tailwind Color -->
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "rgb(159 5 5 / 92%)"
+      }
+    }
+  }
+}
+</script>
+
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-cover bg-center"
+      style="background-image: url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc');">
+
+<!-- Overlay -->
+<div class="absolute inset-0 bg-black/40"></div>
+
+<!-- Login Card -->
+<div class="relative bg-white/90 backdrop-blur-lg w-full max-w-md p-8 rounded-2xl shadow-xl">
+
+  <!-- Title -->
+  <h2 class="text-3xl font-bold text-center text-primary mb-6">
+    Welcome Back 💕
+  </h2>
+
+  <!-- Form -->
+  <form class="space-y-5">
+
+    <!-- Email -->
+    <div>
+      <label class="block text-sm font-medium mb-1 text-primary">Email</label>
+      <input type="email" placeholder="Enter your email"
+        class="w-full border border-primary/40 rounded-lg p-2 text-primary
+        focus:outline-none focus:ring-2 focus:ring-primary">
+    </div>
+
+    <!-- Password -->
+    <div>
+      <label class="block text-sm font-medium mb-1 text-primary">Password</label>
+      <input type="password" placeholder="Enter your password"
+        class="w-full border border-primary/40 rounded-lg p-2 text-primary
+        focus:outline-none focus:ring-2 focus:ring-primary">
+    </div>
+
+    <!-- Remember + Forgot -->
+    <div class="flex justify-between items-center text-sm">
+      <label class="flex items-center gap-2 text-primary">
+        <input type="checkbox" class="accent-primary"> Remember me
+      </label>
+      <a href="#" class="text-primary hover:underline">Forgot Password?</a>
+    </div>
+
+    <!-- Button -->
+    <button
+      class="w-full bg-primary text-white py-2 rounded-lg 
+      hover:bg-primary/90 transition">
+      Login
+    </button>
+
+  </form>
+
+  <!-- Divider -->
+  <div class="text-center text-gray-400 my-4">or</div>
+
+  <!-- Social -->
+  <div class="flex gap-3">
+    <button class="flex-1 border border-primary text-primary py-2 rounded-lg hover:bg-primary/10">
+      Google
+    </button>
+    <button class="flex-1 border border-primary text-primary py-2 rounded-lg hover:bg-primary/10">
+      Facebook
+    </button>
+  </div>
+
+  <!-- Signup -->
+  <p class="text-center text-sm mt-6 text-primary">
+    Don’t have an account?
+    <a href="index.html#registration" class="font-semibold underline">
+      Register
+    </a>
+  </p>
+
+</div>
+
+</body>
+</html>

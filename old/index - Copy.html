@@ -1,0 +1,31 @@
+<!-- Photo Upload -->
+<div class="text-center">
+
+  <label class="block text-[rgb(159_5_5_/92%)] font-semibold mb-2">
+    Upload Photo
+  </label>
+
+  <!-- Preview -->
+  <img id="previewImg"
+       src="https://via.placeholder.com/120"
+       class="mx-auto mb-3 w-28 h-28 object-cover rounded-full border-2 border-[rgb(159_5_5_/92%)]">
+
+  <!-- Input -->
+  <input type="file" accept="image/*"
+    class="block mx-auto text-sm text-[rgb(159_5_5_/92%)] file:mr-4 file:py-2 file:px-4
+    file:rounded file:border-0 file:text-white file:bg-[rgb(159_5_5_/92%)]
+    hover:file:bg-[#9f0505]">
+
+</div>
+
+<script>
+const fileInput = document.querySelector('input[type="file"]');
+const preview = document.getElementById('previewImg');
+
+fileInput.addEventListener('change', function () {
+  const file = this.files[0];
+  if (file) {
+    preview.src = URL.createObjectURL(file);
+  }
+});
+</script>

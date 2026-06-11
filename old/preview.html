@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+
+  <div class="max-w-4xl mx-auto bg-white border border-gray-400">
+
+    <!-- 🔶 Banner Image -->
+    <div>
+      <img src="image/banner1.png" class="w-full h-full object-cover" >
+    </div>
+ <div class="p-6">
+ 
+      <!-- Header -->
+      <div class="text-center border-b pb-4">
+	   <h1 class="text-lg font-bold uppercase">
+          Arya Vysya Sangham Trust
+        </h1>
+	   <img 
+        src="image/logo.png" alt=""class="w-20 h-20 object-cover" >
+       
+       
+      </div>
+
+		 
+      <!-- Form -->
+      <form class="bg-white p-6 mt-6 rounded-2xl shadow-md space-y-5">
+
+        <!-- Category -->
+        <div>
+          <label class="block text-sm font-medium text-gray-600 mb-2">Category</label>
+          <div class="flex flex-wrap gap-4 text-sm">
+            <label><input type="checkbox" class="mr-1"> Professional</label>
+            <label><input type="checkbox" class="mr-1"> Non-Technical</label>
+            <label><input type="checkbox" class="mr-1"> Business</label>
+            <label><input type="checkbox" class="mr-1"> General</label>
+          </div>
+        </div>
+ 
+        <!-- Fields -->
+        <div class="grid md:grid-cols-2 gap-4">
+
+          <input type="text" placeholder="Full Name" class="border p-2 rounded-lg">
+          <input type="text" placeholder="Father Name" class="border p-2 rounded-lg">
+          <input type="text" placeholder="Mother Name" class="border p-2 rounded-lg">
+
+          <select class="border p-2 rounded-lg">
+            <option>Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+
+          <input type="date" class="border p-2 rounded-lg">
+          <input type="text" placeholder="Height" class="border p-2 rounded-lg">
+		  <input type="text" placeholder="Age" class="border p-2 rounded-lg">
+          <input type="text" placeholder="Education" class="border p-2 rounded-lg">
+          <input type="text" placeholder="Occupation" class="border p-2 rounded-lg">
+		   <input type="text" placeholder="Income" class="border p-2 rounded-lg">
+          <input type="text" placeholder="Gotram " class="border p-2 rounded-lg">
+		   <input type="text" placeholder="Religion" class="border p-2 rounded-lg">
+		   <input type="text" placeholder="Caste" class="border p-2 rounded-lg">
+		   <input type="text" placeholder="Sub-Caste" class="border p-2 rounded-lg">
+		   <input type="text" placeholder="Family Status" class="border p-2 rounded-lg">
+		   <input type="text" placeholder="Marital Status " class="border p-2 rounded-lg">
+		   <input type="text" placeholder="District " class="border p-2 rounded-lg">
+		    <input type="text" placeholder="Habits " class="border p-2 rounded-lg">
+          <input type="text" placeholder="Contact Number" class="border p-2 rounded-lg">
+  
+        </div>
+
+        <!-- Address -->
+        <textarea placeholder="Address" rows="3" class="w-full border p-2 rounded-lg"></textarea>
+ <textarea placeholder="Habits " rows="3" class="w-full border p-2 rounded-lg"></textarea>
+ <textarea placeholder="Other Details " rows="3" class="w-full border p-2 rounded-lg"></textarea>
+        <!-- Requirements -->
+        <textarea placeholder="Partner Requirements" rows="3" class="w-full border p-2 rounded-lg"></textarea>
+
+        <!-- Submit -->
+        <button class="w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600">
+          Submit
+        </button>
+   
+      </form>
+
+      <!-- Footer -->
+      <div class="flex justify-between mt-6 text-sm">
+        <p>Signature</p>
+		
+		
+          <p class="mt-3 text-sm">
+            Reg No: 863/2009 Hyderabad - 500079 Address: H.No. 17-1-383/N/80/A/3, Medar Basti,<br>
+            Bhavaninagar, Hyderabad, Telangana - 500079<br>
+            Phone: 9295656648, 9393082195
+          </p>
+        <p>Form No: <b>864</b></p>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
