@@ -78,6 +78,8 @@ function Header() {
           <Link to="/pickles/chicken">Chicken</Link>
           <Link to="/pickles/fish">Fish</Link>
           <Link to="/pickles/mixture">Mixture</Link>
+          <Link to="/portfolio">Portfolio</Link>
+           
         </nav>
 
         {/* 🛒 CART BUTTON */}
